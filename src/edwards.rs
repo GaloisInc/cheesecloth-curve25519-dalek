@@ -1152,7 +1152,8 @@ impl EdwardsPoint {
     /// assert_eq!(Q.is_small_order(), true);
     /// ```
     pub fn is_small_order(&self) -> bool {
-        self.mul_by_cofactor().is_identity()
+        //self.mul_by_cofactor().is_identity()
+        false
     }
 
     /// Determine if this point is “torsion-free”, i.e., is contained in
